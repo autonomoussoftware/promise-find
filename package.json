@@ -1,0 +1,51 @@
+{
+  "name": "promise-find",
+  "version": "1.0.0",
+  "description": "Find the promise call that satisfies the testing function",
+  "keywords": [
+    "fallback",
+    "find",
+    "list",
+    "promise",
+    "sequence",
+    "test"
+  ],
+  "license": "MIT",
+  "author": "Gabriel Montes <gabriel@bloq.com>",
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "repository": "autonomoussoftware/promise-find",
+  "scripts": {
+    "check": "dependency-check . && dependency-check . --unused --no-dev",
+    "check:outdated": "npm-check -i husky",
+    "coverage": "nyc --lines 95 --functions 95 --branches 95 --reporter=lcov --reporter=text npm test",
+    "lint": "eslint --cache .",
+    "prepublishOnly": "npm run build && tag-matches",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "check-tag-matches": "^1.0.0",
+    "dependency-check": "^4.1.0",
+    "eslint": "^6.4.0",
+    "eslint-config-bloq": "^2.1.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsdoc": "^15.9.2",
+    "eslint-plugin-mocha": "^6.1.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prefer-arrow": "^1.1.5",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-require-path-exists": "^1.1.9",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.5",
+    "mocha": "^6.0.1",
+    "npm-check": "^5.9.0",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "chai-as-promised": "^7.1.1"
+  }
+}
