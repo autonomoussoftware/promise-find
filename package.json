@@ -1,6 +1,6 @@
 {
   "name": "promise-find",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find the promise call that satisfies the testing function",
   "keywords": [
     "fallback",
